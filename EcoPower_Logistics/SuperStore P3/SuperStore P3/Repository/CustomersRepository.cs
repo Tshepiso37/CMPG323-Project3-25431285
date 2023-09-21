@@ -3,22 +3,20 @@ using Models;
 
 namespace EcoPower_Logistics.Repository
 {
-    public class CustomersRepository
+    public class CustomersRepository : GenericRepository<Customer>
     {
-        protected readonly SuperStoreContext _context = new SuperStoreContext();
-
-        // GET ALL: Products
-        public IEnumerable<Customer> GetAll()
+        public CustomersRepository(SuperStoreContext context) : base(context)
         {
-            return _context.Customers.ToList();
         }
 
-        // TO DO: Add ‘Get By Id’
-
-        // TO DO: Add ‘Create’
-        // TO DO: Add ‘Edit’
-        // TO DO: Add ‘Delete’
-        // TO DO: Add ‘Exists’
-
+        public Customer GetMostRecentCustomer()
+        {
+            return _context.Customers.OrderByDescending(customer => customer.CustomerId).FirstOrDefault();
+        }
     }
+
+
+
 }
+
+
