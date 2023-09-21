@@ -32,3 +32,13 @@ https://www.youtube.com/watch?v=tKEF6xaeoig
 https://www.youtube.com/watch?v=CLVJVA9cTuU&list=PL4WEkbdagHIQVbiTwos0E38VghMJA06OT
 https://www.youtube.com/watch?v=b0v4_Kv4_RA&list=PL4WEkbdagHIQVbiTwos0E38VghMJA06OT&index=12
 https://www.youtube.com/watch?v=AYQjWE84Bjo&list=PL4WEkbdagHIQVbiTwos0E38VghMJA06OT&index=13
+https://www.youtube.com/watch?v=ytSoabxSQ6E
+https://www.youtube.com/watch?v=JAALTSzLx-o
+https://www.youtube.com/watch?v=2b_8sXW8WfY
+https://www.youtube.com/watch?v=oypz7fnb1o0
+https://www.youtube.com/watch?v=qagdAYZfD04
+https://www.youtube.com/watch?v=mdioesz4sXQ
+https://www.youtube.com/watch?v=vdhFw1VSowg
+https://www.youtube.com/watch?v=rhydGmLxfjQ
+https://www.youtube.com/watch?v=rCHs9oEKKpM
+
