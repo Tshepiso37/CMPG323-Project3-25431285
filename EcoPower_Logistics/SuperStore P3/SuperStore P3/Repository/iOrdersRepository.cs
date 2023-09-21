@@ -2,8 +2,8 @@
 
 namespace EcoPower_Logistics.Repository
 {
-    public interface iOrdersRepository : iGenericRepository<Order>
+    public interface iOrderRepository : iGenericRepository<Order>
     {
-        Order GetMostRecentOrder();
+        Order GetMostRecentOrderDetail();
     }
 }

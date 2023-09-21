@@ -4,6 +4,6 @@ namespace EcoPower_Logistics.Repository
 {
     public interface iOrderDetailsRepository : iGenericRepository<OrderDetail>
     {
-        OrderDetail GetMostRecentOrderDetails();
+        OrderDetail GetMostRecentOrderDetail();
     }
 }

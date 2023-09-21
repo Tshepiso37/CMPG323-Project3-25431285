@@ -24,7 +24,5 @@ namespace Models
         public virtual Customer Customer { get; set; } = null!;
         [DisplayName("Order Details")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
-
-        public DateTime CreatedDate { get; set; }
     }
 }
