@@ -3,11 +3,11 @@ https://project2ecopowersolutions.azurewebsites.net/
 Project3 is part of the CMPG323 module, consisting of 5 projects - 2 of which have already been completed, and focuses on various aspects of web development and software engineering, including C# programming, web development using HTML, CSS, and JavaScript, accessibility considerations, deployment to Azure with Visual Studio, and security aspects using the ASP.NET Core Identity framework.
 ## Training 
 The training achieved for Project 3 is:
-Write your first C# code badge
-Build a simple website using HTML, CSS, and Javascript badge
-Learn the basics of accessibility badge
-Publish a wep app to Azure with Visual Studio badge
-Secure a .NET web app with ASP.NET Core Identity framework badge
+- Write your first C# code badge
+- Build a simple website using HTML, CSS, and Javascript badge
+- Learn the basics of accessibility badge
+- Publish a wep app to Azure with Visual Studio badge
+- Secure a .NET web app with ASP.NET Core Identity framework badge
 ### Repository Folder
 A Repository folder was added, wchich containts the following classes:
 - GenericRepository
