@@ -29,8 +29,8 @@ These are the components that the project consist of:
 - Controller Method Index
    The Index method in the controller uses the 'ProductRepository' to retrieve and display product data.
 
--IGenericRepository Interface
-  The Generic repository interface with common data access methods.
+- IGenericRepository Interface
+   The Generic repository interface with common data access methods.
    - The Methods in this Class do the following:
      - GetById(int id): Retrieves an entity by its unique identifier.
      - GetAll(): Retrieves all entities of a given type.
@@ -40,27 +40,29 @@ These are the components that the project consist of:
      - Remove(T entity): Removes an entity from the database.
      - RemoveRange(IEnumerable<T> entities): Removes a collection of entities from the database.
 
--GenericRepository Class
-  The generic repository class implements the iGenericRepository interface.
-  The Methods do the following: Implements all methods defined in 'IGenericRepository' for generic data access.
+- GenericRepository Class
+   The generic repository class implements the iGenericRepository interface.
+   The Methods do the following: Implements all methods defined in iGenericRepository for generic data access.
 
--iServiceRepository Interface
-  Interface for managing service-related data access, extending iGenericRepository<Service>.
-   - Additional Method:
-     - GetMostRecentService(): Retrieves the most recently created service.
+- iServiceRepository Interface
+   Interface for managing service-related data access, extending iGenericRepository<Service>.
+   The GetMostRecentService() method retrieves the most recently created service.
 
-7. **ServiceRepository Class**
-   - Description: Implementation of the 'IServiceRepository' interface for the service model.
-   - Methods: Implements all methods from 'IGenericRepository' and includes the custom method 'GetMostRecentService()' for service-specific operations.
+- ServiceRepository Class
+  This class implements the iServiceRepository interface for the service model.
+  All methods are implemented from iGenericRepository and includes the custom method GetMostRecentService() for service-specific operations.
 
-8. **Dependency Injection in Controller**
-   - Description: The 'ServicesController' uses dependency injection to inject the 'IServiceRepository' into its constructor, enabling data access without direct context references.
+- Dependency Injection in Controller
+   The ServicesController uses dependency injection to inject the iServiceRepository into its constructor, enabling data access without direct context references.
 
-9. **Implementation Instructions**
-   - Description: Guidance to apply the repository pattern and dependency injection to all controller methods, replacing direct context references with repository calls.
-##### Program.cs
-A code for Dependence injenction was added, to cater for it.
-This is the line of code of added: builder.Services.AddRazorPages();.
+- Implementation Instructions
+   Guidance to apply the repository pattern and dependency injection to all controller methods, replacing direct context references with repository calls.
+##### How to use the above
+To utilize the repositories mentioned and their respective code:
+
+- Implement the repository and interface classes for other models, following the pattern set for Product and Order.
+- Inject the appropriate repository interfaces into the controllers that require data access.
+- Ensure proper configuration in the ASP.NET Core Program.cs class for dependency injection.
 
 ###### Reference List
 https://www.youtube.com/watch?v=x6C20zhZHw8
