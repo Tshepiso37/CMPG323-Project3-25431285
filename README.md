@@ -9,7 +9,7 @@ The training achieved for Project 3 is:
 - Publish a wep app to Azure with Visual Studio badge
 - Secure a .NET web app with ASP.NET Core Identity framework badge
 ### Repository Folder
-A Repository folder was added, wchich containts the following classes:
+A Repository folder was added, which containts the following classes:
 - GenericRepository
 - iGenericRepository
 - CustomersRepository
@@ -27,7 +27,7 @@ These are the components that the project consist of:
    The meethods GetAll(): Retrieves all products from the database.
 
 - Controller Method Index
-   The Index method in the controller uses the 'ProductRepository' to retrieve and display product data.
+   The Index method in the controller uses the ProductsRepository to retrieve and display product data.
 
 - IGenericRepository Interface
    The Generic repository interface with common data access methods.
@@ -48,19 +48,19 @@ These are the components that the project consist of:
    Interface for managing service-related data access, extending iGenericRepository<Service>.
    The GetMostRecentService() method retrieves the most recently created service.
 
-- ServiceRepository Class
-  This class implements the iServiceRepository interface for the service model.
+- CustomersRepository Class
+  This class implements the iCustomersRepository interface for the customer model.
   All methods are implemented from iGenericRepository and includes the custom method GetMostRecentService() for service-specific operations.
+  This is applicable for the Productsrepository, OrderRepository, and OrderDetailsRepository.
 
 - Dependency Injection in Controller
-   The ServicesController uses dependency injection to inject the iServiceRepository into its constructor, enabling data access without direct context references.
+   The CustomersController uses dependency injection to inject the iCustomersRepository into its constructor, enabling data access without direct context references.
+   This is applicable for the ProductsController, OrderController, and OrderDetailsController.
 
-- Implementation Instructions
-   Guidance to apply the repository pattern and dependency injection to all controller methods, replacing direct context references with repository calls.
 ##### How to use the above
 To utilize the repositories mentioned and their respective code:
 
-- Implement the repository and interface classes for other models, following the pattern set for Product and Order.
+- Implement the repository and interface classes for other models, following the pattern set for Product, Order, OrderDetails and Customers.
 - Inject the appropriate repository interfaces into the controllers that require data access.
 - Ensure proper configuration in the ASP.NET Core Program.cs class for dependency injection.
 
