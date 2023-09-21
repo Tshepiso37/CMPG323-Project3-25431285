@@ -1,6 +1,6 @@
 https://project2ecopowersolutions.azurewebsites.net/
 # CMPG323-Project3-25431285
-This project is part of the CMPG323 module and focuses on various aspects of web development and software engineering, including C# programming, web development using HTML, CSS, and JavaScript, accessibility considerations, deployment to Azure with Visual Studio, and security aspects using the ASP.NET Core Identity framework.
+Project3 is part of the CMPG323 module, consisting of 5 projects - 2 of which have already been completed, and focuses on various aspects of web development and software engineering, including C# programming, web development using HTML, CSS, and JavaScript, accessibility considerations, deployment to Azure with Visual Studio, and security aspects using the ASP.NET Core Identity framework.
 ## Training 
 The training achieved for Project 3 is:
 Write your first C# code badge
