@@ -10,7 +10,7 @@ Secure a .NET web app with ASP.NET Core Identity framework badge
 A Repository folder was added, wchich containts the following classes:
 - GenericRepository
 - iGenericRepository
-  The iGenericRepository references the GenericRepository, and
+  The iGenericRepository references the GenericRepository.
 - CustomersRepository
 - iCustomersRepository
 - ProductsRepository
@@ -20,7 +20,11 @@ A Repository folder was added, wchich containts the following classes:
 - OrderDetailsRepository
 - iOrderDetailsRepository
 
-#### Reference List
+#### Program.cs
+A code for Dependence injenction was added, to cater for it.
+This is the line of code of added: builder.Services.AddRazorPages();.
+
+##### Reference List
 https://www.youtube.com/watch?v=x6C20zhZHw8
 https://www.youtube.com/watch?v=rsfYoA4LsS8
 https://www.youtube.com/watch?v=E8QQpncP9ts
