@@ -1,5 +1,6 @@
 https://project2ecopowersolutions.azurewebsites.net/
 # CMPG323-Project3-25431285
+This project is part of the CMPG323 module and focuses on various aspects of web development and software engineering, including C# programming, web development using HTML, CSS, and JavaScript, accessibility considerations, deployment to Azure with Visual Studio, and security aspects using the ASP.NET Core Identity framework.
 ## Training 
 The training achieved for Project 3 is:
 Write your first C# code badge
@@ -11,7 +12,6 @@ Secure a .NET web app with ASP.NET Core Identity framework badge
 A Repository folder was added, wchich containts the following classes:
 - GenericRepository
 - iGenericRepository
-  The iGenericRepository references the GenericRepository.
 - CustomersRepository
 - iCustomersRepository
 - ProductsRepository
@@ -20,12 +20,49 @@ A Repository folder was added, wchich containts the following classes:
 - iOrdersRepository
 - OrderDetailsRepository
 - iOrderDetailsRepository
+#### Project Structure
+These are the components that the project consist of: 
+ - ProductRepository Class
+   Repository class for managing product-related data access.
+   The meethods GetAll(): Retrieves all products from the database.
 
-#### Program.cs
+- Controller Method Index
+   The Index method in the controller uses the 'ProductRepository' to retrieve and display product data.
+
+-IGenericRepository Interface
+  The Generic repository interface with common data access methods.
+   - The Methods in this Class do the following:
+     - GetById(int id): Retrieves an entity by its unique identifier.
+     - GetAll(): Retrieves all entities of a given type.
+     - Find(Expression<Func<T, bool>> expression): Finds entities based on a specified filter expression.
+     - Add(T entity): Adds a new entity to the database.
+     - AddRange(IEnumerable<T> entities): Adds a collection of entities to the database.
+     - Remove(T entity): Removes an entity from the database.
+     - RemoveRange(IEnumerable<T> entities): Removes a collection of entities from the database.
+
+-GenericRepository Class
+  The generic repository class implements the iGenericRepository interface.
+  The Methods do the following: Implements all methods defined in 'IGenericRepository' for generic data access.
+
+-iServiceRepository Interface
+  Interface for managing service-related data access, extending iGenericRepository<Service>.
+   - Additional Method:
+     - GetMostRecentService(): Retrieves the most recently created service.
+
+7. **ServiceRepository Class**
+   - Description: Implementation of the 'IServiceRepository' interface for the service model.
+   - Methods: Implements all methods from 'IGenericRepository' and includes the custom method 'GetMostRecentService()' for service-specific operations.
+
+8. **Dependency Injection in Controller**
+   - Description: The 'ServicesController' uses dependency injection to inject the 'IServiceRepository' into its constructor, enabling data access without direct context references.
+
+9. **Implementation Instructions**
+   - Description: Guidance to apply the repository pattern and dependency injection to all controller methods, replacing direct context references with repository calls.
+##### Program.cs
 A code for Dependence injenction was added, to cater for it.
 This is the line of code of added: builder.Services.AddRazorPages();.
 
-##### Reference List
+###### Reference List
 https://www.youtube.com/watch?v=x6C20zhZHw8
 https://www.youtube.com/watch?v=rsfYoA4LsS8
 https://www.youtube.com/watch?v=E8QQpncP9ts
