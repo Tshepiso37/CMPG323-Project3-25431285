@@ -29,7 +29,7 @@ These are the components that the project consist of:
 - Controller Method Index
    The Index method in the controller uses the ProductsRepository to retrieve and display product data.
 
-- IGenericRepository Interface
+- iGenericRepository Interface
    The Generic repository interface with common data access methods.
    - The Methods in this Class do the following:
      - GetById(int id): Retrieves an entity by its unique identifier.
